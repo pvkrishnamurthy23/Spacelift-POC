@@ -58,7 +58,7 @@ tags = merge(var.tags, {
 ### 4. Spacelift Configuration
 
 #### Stack Settings
-- **Name**: `spacelift-poc`
+- **Name**: `SecOPS-CoPilot`
 - **Terraform Version**: `1.5.0`
 - **Project Root**: `.`
 - **Branch**: `main`
@@ -67,8 +67,8 @@ tags = merge(var.tags, {
 ```
 # Non-sensitive
 aws_region = "us-east-1"
-project_name = "spacelift-poc"
-environment = "dev"
+project_name = "SecOPS-CoPilot"
+environment = "Development"
 vpc_cidr = "10.0.0.0/16"
 instance_type = "t3.micro"
 desired_capacity = "2"
@@ -83,8 +83,8 @@ ssh_cidr = "0.0.0.0/0"
 #### Environment Variables
 ```
 TF_VAR_aws_region=us-east-1
-TF_VAR_project_name=spacelift-poc
-TF_VAR_environment=dev
+TF_VAR_project_name=SecOPS-CoPilot
+TF_VAR_environment=Development
 ```
 
 ### 5. Security Enhancements

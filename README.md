@@ -1,4 +1,4 @@
-# Spacelift POC - Terraform Infrastructure
+# SecOPS-CoPilot - Terraform Infrastructure
 
 This Terraform project creates a complete AWS infrastructure for a web application with the following components:
 
@@ -25,7 +25,7 @@ This Terraform project creates a complete AWS infrastructure for a web applicati
 ### 1. Generate SSH Key Pair
 
 ```bash
-ssh-keygen -t rsa -b 2048 -f ~/.ssh/spacelift-poc
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/SecOPS-CoPilot
 ```
 
 ### 2. Update Configuration
@@ -34,7 +34,7 @@ Edit `terraform.tfvars` and replace the `ssh_public_key` with your actual public
 
 ```bash
 # Copy your public key content
-cat ~/.ssh/spacelift-poc.pub
+cat ~/.ssh/SecOPS-CoPilot.pub
 ```
 
 Then update the `ssh_public_key` variable in `terraform.tfvars`.
@@ -83,7 +83,7 @@ terraform output load_balancer_dns_name
 ### Key Variables
 
 - `aws_region`: AWS region (default: us-east-1)
-- `project_name`: Project name used for resource naming
+- `project_name`: Project name used for resource naming (default: SecOPS-CoPilot)
 - `vpc_cidr`: VPC CIDR block (default: 10.0.0.0/16)
 - `instance_type`: EC2 instance type (default: t3.micro)
 - `desired_capacity`: Number of EC2 instances (default: 2)

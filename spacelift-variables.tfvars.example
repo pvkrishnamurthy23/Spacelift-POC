@@ -3,8 +3,8 @@
 
 # Basic Configuration
 aws_region = "us-east-1"
-project_name = "spacelift-poc"
-environment = "dev"
+project_name = "SecOPS-CoPilot"
+environment = "Development"
 
 # VPC Configuration
 vpc_cidr = "10.0.0.0/16"
@@ -33,9 +33,9 @@ spacelift_run_id = ""
 
 # Common Tags
 tags = {
-  Environment = "dev"
-  Project     = "spacelift-poc"
+  Owner       = "pkrishnamurthy@altimetrik.com"
+  Project     = "SecOPS-CoPilot"
+  Application = "POC"
+  Environment = "Development"
   ManagedBy   = "spacelift"
-  Owner       = "your-team"
-  CostCenter  = "your-cost-center"
 } 

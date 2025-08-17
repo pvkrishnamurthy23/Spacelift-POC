@@ -36,7 +36,7 @@ The `spacelift.yaml` file has been created to define the stack configuration.
 In the Spacelift UI, configure the following:
 
 #### Basic Settings:
-- **Stack Name**: `spacelift-poc`
+- **Stack Name**: `SecOPS-CoPilot`
 - **Project Root**: `.` (root directory)
 - **Terraform Version**: `1.5.0` or latest
 - **Branch**: `main`
@@ -46,8 +46,8 @@ Set these in the Spacelift UI under "Environment Variables":
 
 ```
 TF_VAR_aws_region=us-east-1
-TF_VAR_project_name=spacelift-poc
-TF_VAR_environment=dev
+TF_VAR_project_name=SecOPS-CoPilot
+TF_VAR_environment=Development
 ```
 
 #### Terraform Variables:
@@ -56,8 +56,8 @@ Set these in the Spacelift UI under "Terraform Variables":
 **Non-sensitive variables:**
 ```
 aws_region = "us-east-1"
-project_name = "spacelift-poc"
-environment = "dev"
+project_name = "SecOPS-CoPilot"
+environment = "Development"
 vpc_cidr = "10.0.0.0/16"
 instance_type = "t3.micro"
 desired_capacity = "2"

@@ -86,8 +86,10 @@ variable "tags" {
   description = "Common tags for all resources"
   type        = map(string)
   default = {
-    Environment = "dev"
-    Project     = "spacelift-poc"
+    Owner       = "pkrishnamurthy@altimetrik.com"
+    Project     = "SecOPS-CoPilot"
+    Application = "POC"
+    Environment = "Development"
     ManagedBy   = "terraform"
   }
 }
